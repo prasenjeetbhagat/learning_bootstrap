@@ -70,6 +70,7 @@
   <!-- header end -->
 
 
+
   <main>
     <!-- slider section for images -->
     <section>
@@ -132,6 +133,11 @@
         </button>
       </div>
     </section>
+    <!-- section end -->
+
+
+
+
     <!-- section start -->
     <section class="mt-4 bg-dark text-white">
       <div class="container">
@@ -173,15 +179,15 @@
 
     <!-- section start -->
 
+
     <section class="mt-4 pb-4 bg-secondary">
 
       <div class="container">
 
         <div class="row g-3">
-
-          <!-- Card 1 -->
           <div class="col-12 col-sm-6 col-md-3">
             <div class="card h-100">
+
               <img src="images/logosquare/img2.jpg" class="card-img-top" alt="Monthly Membership">
 
               <div class="card-body">
@@ -192,12 +198,68 @@
                   and make up the bulk of the card's content.
                 </p>
 
-                <a href="month1.html" class="btn btn-danger">
+                <!-- Modal Button -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#monthlyModal">
                   Enroll Now
-                </a>
+                </button>
+
               </div>
             </div>
           </div>
+          <!-- modal start -->
+          <!-- Monthly Membership Modal -->
+          <div class="modal fade" id="monthlyModal" tabindex="-1" aria-labelledby="monthlyModalLabel"
+            aria-hidden="true">
+
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="monthlyModalLabel">
+                    Monthly Membership
+                  </h5>
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+
+                  <h4 class="text-danger">₹999 / Month</h4>
+
+                  <p>
+                    Get access to our gym facilities and start your fitness journey.
+                  </p>
+
+                  <ul>
+                    <li>Full Gym Access</li>
+                    <li>Cardio & Weight Training</li>
+                    <li>Locker Facility</li>
+                    <li>Professional Equipment</li>
+                    <li>Flexible Workout Timing</li>
+                  </ul>
+
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+
+                  <a href="month1.html" class="btn btn-danger">
+                    Continue Enrollment
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
 
           <!-- Card 2 -->
           <div class="col-12 col-sm-6 col-md-3">
@@ -272,12 +334,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <img src="images/l6.png" img-fluid alt="Logo" width="100" height="100"> 
+          <img src="images/l6.png" img-fluid alt="Logo" width="100" height="100">
           <h4>Description</h4>
-          <p>A gym company is a business that operates fitness centers, offers workout memberships, and provides health and training services to the public.</p>
+          <p>A gym company is a business that operates fitness centers, offers workout memberships, and provides health
+            and training services to the public.</p>
         </div>
         <div class="col-md-3 mt-4">
-           <h4>Quick Links</h4>
+          <h4>Quick Links</h4>
           <ul class="list-unstyled">
             <li><a href="index.html">Home</a></li>
             <li><a href="workouts.html">Workouts/Classes</a></li>
@@ -296,7 +359,7 @@
           </ul>
         </div>
         <div class="col-md-3 mt-4">
-                   <h4>Contact Us</h4>
+          <h4>Contact Us</h4>
           <ul class="list-unstyled">
             <li><i class="bi bi-telephone"></i> Phone: +91 1234567890</li>
             <li><i class="bi bi-envelope"></i> Email: info@gymcompany.com</li>
