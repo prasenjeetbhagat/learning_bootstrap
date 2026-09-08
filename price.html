@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <style>
-      .bg-primary {
-        background-color: #7e96c5 !important;
-      }
-    </style> 
-  
 
-  </head>
-  <body>
-   <!-- header start.... -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .bg-primary {
+      background-color: #7e96c5 !important;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- header start.... -->
   <header>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="white">
       <div class="container">
@@ -65,16 +68,75 @@
   <!-- header end -->
 
   <!-- Pricing main section start -->
- <main>
+  <main>
     <section class="py-5" style="background-color: #121416;">
       <div class="container">
         <h2 class="text-center mb-4">Pricing & Memberships</h2>
         <p class="text-center mb-5">Choose the plan that works best for you.</p>
         <!-- Pricing cards will go here -->
-         <img src="images/priceimage.png" class="img-fluid" alt="Pricing Image">
+        <img src="images/priceimage.png" class="img-fluid" alt="Pricing Image">
       </div>
     </section>
- </main>
+    <!-- select section start -->
+
+    <style>
+      .align-items-center {
+        align-items: center;
+        width: 50;
+      }
+    </style>
+    <section class="mt-5">
+    <div class="container-fluid  bg-primary text-dark" mb-4 mt-4  bg-primary text-dark>
+       <select class=" form-select" aria-label="Default select example">
+      <option selected>Please Select the Membership plan</option>
+      <option value="1">1-Month-Plan</option>
+      <option value="2">3-Month-Plan</option>
+      <option value="3">6-Month-Plan</option>
+      <option value="4">12-Month-Plan</option>
+      </select>
+    </div>
+   
+    </section>
+    <!-- select section end -->
+     <!-- new section start -->
+    <section>
+      <form class="row gx-3 gy-2 align-items-center bg-primary text-dark mb-3">
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeInputName">Name</label>
+          <input type="text" class="form-control" id="specificSizeInputName" placeholder="Jane Doe">
+        </div>
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeInputGroupUsername">Username</label>
+          <div class="input-group">
+            <div class="input-group-text">@</div>
+            <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Username">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+          <select class="form-select" id="specificSizeSelect">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-auto">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+            <label class="form-check-label" for="autoSizingCheck2">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="col-auto">
+          <a href="index.html"><button type="submit" class="btn btn-primary">Submit</button>
+          </a>
+        </div>
+      </form>
+    </section>
+    <!-- section end -->
+  </main>
 
 
 
@@ -93,6 +155,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
